@@ -17,3 +17,4 @@ Coming soon...
   * ``mvn -Pwar package``
 ### Running
   * ``mvn exec:java``
+  * Point your browser at (http://localhost:8081).

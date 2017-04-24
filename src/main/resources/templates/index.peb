@@ -44,10 +44,10 @@
                 <br />
                 <ul>
                     <li>
-                        <a href="blind?in=<root>Test</root>">Base case Valid</a>
+                        <a href="blind?in=<root>Test</root>">Valid Case</a>
                     </li>
                     <li>
-                        <a href="blind?in=<root>Test</root">Base case Invalid</a>
+                        <a href="blind?in=<root>Test</root">Invalid Case</a>
                     </li>
                 </ul>
             </section>
