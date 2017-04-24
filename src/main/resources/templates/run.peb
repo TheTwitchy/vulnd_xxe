@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>xxer - Vulnerable Server</title>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <link rel=stylesheet type=text/css href="https://cdn.jsdelivr.net/picnicss/6.3.2/picnic.min.css">
+        <style>
+            body {
+                max-width: 960px;
+                padding: 10px;
+                max-width: 960px;
+                width: 200%;
+                margin: 10px auto 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>xxer Vulnerable Test Server</h1>
+        <article class="card">
+            <header>
+                <h2>Payload</h2>
+            </header>
+            <section>
+                {{payload}}
+            </section>
+        </article>
+        <article class="card">
+            <header>
+                <h2>Result</h2>
+            </header>
+            <section>
+                {{result}}
+            </section>
+        </article>
+        <a href="/">Back</a>
+    </body>
+</html>
