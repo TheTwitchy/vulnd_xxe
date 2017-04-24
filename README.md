@@ -13,8 +13,6 @@ Coming soon...
   * Maven
 ### Building
   * ``mvn compile``
-#### Building a WAR
-  * ``mvn -Pwar package``
 ### Running
   * ``mvn exec:java``
   * Point your browser at [http://localhost:8081](http://localhost:8081).
