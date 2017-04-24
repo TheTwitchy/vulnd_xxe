@@ -49,12 +49,6 @@
                     <li>
                         <a href="blind?in=<root>Test</root">Base case Invalid</a>
                     </li>
-                    <li>
-                        <a href="">Get /etc/passwd</a>
-                    </li>
-                    <li>
-                        <a href="">Get http://canihazip.com</a>
-                    </li>
                 </ul>
             </section>
         </article>
