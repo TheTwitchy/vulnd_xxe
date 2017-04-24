@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>xxer - Vulnerable Server</title>
+        <title>vulnd - XXE Injection Vulnerable Server</title>
         <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
         <link rel=stylesheet type=text/css href="https://cdn.jsdelivr.net/picnicss/6.3.2/picnic.min.css">
         <style>
@@ -14,7 +14,7 @@
         </style>
     </head>
     <body>
-        <h1>xxer Vulnerable Test Server</h1>
+        <h1>vulnd - XXE Injection Vulnerable Server</h1>
         <article class="card">
             <header>
                 <h2>Normal Test</h2>
