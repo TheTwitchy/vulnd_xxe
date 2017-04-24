@@ -4,8 +4,12 @@ A server vulnerable to XXE that can be used to test payloads using the [xxer too
 ## Target Audience
 Penetration testers and developers who want to learn what XXE injection is, and the impact it can have. Also people who want to browse the Internet and thier own filesystem in the most convuluted and painful manner imaginable.
 
-## Examples
-Coming soon...
+## Screenshots
+### Dashboard
+![vulnd_xxe Dashboard](http://imgur.com/SyBBndC.png)
+
+### Example
+![vulnd_xxe Example](http://imgur.com/R8b40tj.png)
 
 ## Running
 ### Requirements
