@@ -9,7 +9,7 @@ Penetration testers and developers who want to learn what XXE injection is, and 
 ![vulnd_xxe Dashboard](http://imgur.com/SyBBndC.png)
 
 ### Example
-![vulnd_xxe Example](http://imgur.com/R8b40tj.png)
+![vulnd_xxe Example](https://i.imgur.com/JA6loy8.png)
 
 ## Running
 ### Requirements
